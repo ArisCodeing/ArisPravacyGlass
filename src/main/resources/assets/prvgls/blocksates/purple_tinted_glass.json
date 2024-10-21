@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "tinted=true": { "model": "prvgls:block/purple_tinted_glass_tinted" },
+    "tinted=false": { "model": "prvgls:block/purple_tinted_glass" }
+  }
+}

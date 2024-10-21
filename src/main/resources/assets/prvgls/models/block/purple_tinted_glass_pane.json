@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/pane",
+  "textures": {
+    "pane": "prvgls:blocks/purple/0"
+  },
+  "variants": {
+    "": { "model": "prvgls:purple_tinted_glass_pane" }
+  }
+}
