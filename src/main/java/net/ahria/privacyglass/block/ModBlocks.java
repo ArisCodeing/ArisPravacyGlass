@@ -5,8 +5,6 @@ import net.ahria.privacyglass.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.GlassBlock;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,7 +17,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, PrivacyGlass.ModId);
 
     public static final RegistryObject<Block> PurpleTintedGlass = RegisterBlock("purple_tinted_glass",
-            () -> new PurpleTintedGlassBlock());
+            () -> new TintedGlassBlock());
 
     private static <T extends Block> RegistryObject<T> RegisterBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

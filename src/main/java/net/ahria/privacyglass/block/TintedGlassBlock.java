@@ -16,11 +16,11 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class PurpleTintedGlassBlock extends GlassBlock {
+public class TintedGlassBlock extends GlassBlock {
     public static final BooleanProperty TINTED = BooleanProperty.create("tinted");
-    //this class exists because of it toggling betwen two difrent staets
+    //this class exists because of it toggling betwen tinted or nor
 
-    public PurpleTintedGlassBlock() {
+    public TintedGlassBlock() {
         super(Properties.copy(Blocks.GLASS));
         this.registerDefaultState(this.stateDefinition.any().setValue(TINTED, false));
     }
